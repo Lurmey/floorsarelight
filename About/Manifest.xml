@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Manifest>
   <identifier>FloorsAreLight</identifier>
-  <version>0.3.0</version>
+  <version>0.4.0</version>
   <dependencies />
   <loadAfter>
     <li>Royalty</li>
