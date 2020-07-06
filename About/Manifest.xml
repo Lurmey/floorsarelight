@@ -11,6 +11,6 @@
     <li>2133918278</li>
   </suggests>
   <showCrossPromotions>true</showCrossPromotions>
-  <manifestUri>https://github.com/Lurmey/floorsarelight/blob/master/About/Manifest.xml</manifestUri>
+  <manifestUri>https://raw.githubusercontent.com/Lurmey/floorsarelight/master/About/Manifest.xml</manifestUri>
   <downloadUri>https://github.com/Lurmey/floorsarelight/releases/tag/0.3.0</downloadUri>
 </Manifest>
