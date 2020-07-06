@@ -2,15 +2,9 @@
 <Manifest>
   <identifier>FloorsAreLight</identifier>
   <version>0.4.0</version>
-  <dependencies />
-  <loadAfter>
-    <li>Royalty</li>
-    <li>StuffedFloors</li>
-  </loadAfter>
   <suggests>
     <li>2133918278</li>
   </suggests>
-  <showCrossPromotions>true</showCrossPromotions>
   <manifestUri>https://raw.githubusercontent.com/Lurmey/floorsarelight/master/About/Manifest.xml</manifestUri>
   <downloadUri>https://github.com/Lurmey/floorsarelight/releases/tag/0.3.0</downloadUri>
 </Manifest>
