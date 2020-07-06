@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Manifest>
+  <identifier>FloorsAreLight</identifier>
+  <version>0.3.0</version>
+  <dependencies />
+  <loadAfter>
+    <li>Royalty</li>
+    <li>StuffedFloors</li>
+  </loadAfter>
+  <suggests>
+    <li>2133918278</li>
+  </suggests>
+  <showCrossPromotions>true</showCrossPromotions>
+  <manifestUri>https://github.com/Lurmey/floorsarelight/blob/master/About/Manifest.xml</manifestUri>
+  <downloadUri>https://github.com/Lurmey/floorsarelight/releases/tag/0.3.0</downloadUri>
+</Manifest>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <success>Normal</success>
+    <mods>
+      <li>Royalty</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!--Patch royalty carpets to require appropriate afforances-->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/TerrainDef[@Name="CarpetFineBase"]</xpath>
+          <value>
+            <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+          </value>
+        </li>
+        <!--Patch royalty carpets to only support appropriate affordances-->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/TerrainDef[@Name="CarpetFineBase"]</xpath>
+          <value>
+            <affordances Inherit="False">
+              <li>Light</li>
+            </affordances>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

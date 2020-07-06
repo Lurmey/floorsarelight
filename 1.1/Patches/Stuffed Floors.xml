@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <success>Normal</success>
+    <mods>
+      <li>Stuffed Floors</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!--Patch stuffed floors to require appropriate affordances-->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/StuffedFloors.FloorTypeDef[@Name="StuffedFloorsWoodBase"]</xpath>
+          <value>
+            <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/StuffedFloors.FloorTypeDef[@Name="StuffedFloorsMetalBase"]</xpath>
+          <value>
+            <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+          </value>
+        </li>
+        <!--Patch stuffed floors to support appropriate affordances-->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/StuffedFloors.FloorTypeDef[@Name="StuffedFloorsWoodBase"]</xpath>
+          <value>
+            <affordances Inherit="False">
+              <li>Light</li>
+            </affordances>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/StuffedFloors.FloorTypeDef[@Name="StuffedFloorsMetalBase"]</xpath>
+          <value>
+            <affordances Inherit="False">
+              <li>Light</li>
+              <li>Medium</li>
+            </affordances>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

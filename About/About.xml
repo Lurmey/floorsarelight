@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Floors Are Light!</name>
+  <author>Lurmey</author>
+  <packageId>lurmey.floorsarelight</packageId>
+  <url></url>
+  <supportedVersions>
+    <li>1.1</li>
+  </supportedVersions>
+  <description>Patches Vanilla, Royalty, and Stuffed Floors (by Fluffy) to require more realistic terrain affordances. Primarily for use with my other mod, Foundations
+
+Wooden floors and Carpets now require only Light affordance.
+Metal floors and Sterile tile now require Medium afforance.
+Stone floors and Concrete still require Heavy affordance.</description>
+  <modDependencies/>
+  <incompatibleWith/>
+  <loadBefore/>
+  <loadAfter>
+	<li>ludeon.rimworld</li>
+  <li>ludeon.rimworld.royalty</li>
+	<li>fluffy.stuffedfloors</li>
+  </loadAfter>
+</ModMetaData>

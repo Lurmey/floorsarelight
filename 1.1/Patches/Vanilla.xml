@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <!--Patch vanilla floors to require appropriate afforances-->
+	    <li Class="PatchOperationAdd">
+        <xpath>Defs/TerrainDef[defName="WoodPlankFloor" or @Name="CarpetBase"]</xpath>
+        <value>
+          <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/TerrainDef[defName="SterileTile" or @Name="TileMetalBase"]</xpath>
+        <value>
+          <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        </value>
+      </li>
+      <!--Patch vanilla floors to only support appropriate affordances-->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/TerrainDef[defName="WoodPlankFloor" or @Name="CarpetBase"]</xpath>
+        <value>
+          <affordances Inherit="False">
+            <li>Light</li>
+          </affordances>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/TerrainDef[defName="SterileTile" or @Name="TileMetalBase"]</xpath>
+        <value>
+          <affordances Inherit="False">
+            <li>Light</li>
+            <li>Medium</li>
+          </affordances>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
